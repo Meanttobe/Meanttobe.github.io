@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>Tourist attractions recommended</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body background="images/back.jpg" class style>
+    <div class="container">
+        <div class="title">
+            <h1>旅游景点推荐</h1>
+        </div>
+        <div id="details"></div>
+        <div class="shadow">
+            <div class="col-12">
+                <div class="calendar-title">
+                    <div class="next" id="next">
+                        <div class="next-pos">
+                            <a href="#" onclick="next_tousts()" readonly>换一批 ></a>
+                        </div>
+                    </div>
+                </div>
+                <table class="table-bordered" frame="void">
+                    <!-- <h1>旅游景点列表</h1> -->
+                    <thead>
+                        <tr>
+                            <th >#</th>
+                            <th >景点所在地</th>
+                            <th>景点名称(点击查看详情)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="main"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
